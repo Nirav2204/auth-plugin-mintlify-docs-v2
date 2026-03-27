@@ -1,0 +1,49 @@
+---
+title: "Setup Wizard"
+description: "4-step wizard to connect your Framer project and get auth working."
+icon: "wand-magic-sparkles"
+---
+
+Open the plugin and click **Setup**. The wizard walks you through 4 steps.
+
+<Steps>
+  <Step title="Connect Workspace">
+    The plugin reads your Framer project ID, name, and published URLs. It creates a workspace in the Auth Plugin backend linked to your project.
+  </Step>
+
+  <Step title="Configure Protected Pages">
+    Choose which pages require authentication. Common setup:
+
+    | Path | Protected |
+    |------|-----------|
+    | `/` (Home) | No |
+    | `/dashboard` | Yes |
+    | `/account` | Yes |
+
+    You can change these later from the **Protected Pages** section in the plugin.
+  </Step>
+
+  <Step title="Insert Scripts">
+    Two scripts are auto-injected into your site:
+
+    - **Shield Script** (head) — Checks auth state and redirects unauthenticated visitors on protected pages
+    - **Relay Script** (body) — Manages session tokens and refresh
+
+    <Note>
+    Don't remove these scripts from Framer's custom code settings. They're required for auth to work.
+    </Note>
+  </Step>
+
+  <Step title="Insert Components & Overrides">
+    Three starter components are added:
+    - **Sign In Form**
+    - **Sign Up Form**
+    - **Sign Out Button**
+
+    An **AuthPluginOverrides.ts** code file is also generated with overrides like `ShowWhenAuthenticated`, `IdentityName`, and `TriggerSignOut`.
+
+    You can insert more components later from the **Components** page.
+  </Step>
+</Steps>
+
+After setup, follow the **Page Guide** to build each page of your auth flow.

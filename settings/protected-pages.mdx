@@ -1,0 +1,32 @@
+---
+title: "Protected Pages"
+description: "Choose which pages require authentication."
+icon: "shield"
+---
+
+Protected Pages block unauthenticated visitors and redirect them to your sign-in page automatically.
+
+## Adding a Protected Page
+
+1. Open Auth Plugin > **Protected Pages**
+2. Click **Add**
+3. Enter the page path (e.g., `/dashboard`)
+4. The pattern is auto-generated (e.g., `/dashboard.*`)
+
+## How It Works
+
+The Shield Script (injected during setup) checks the current URL on every page load. If it matches a protected page pattern and the user is not signed in, they're redirected to sign-in.
+
+<Note>
+Patterns use regex matching. `/dashboard.*` protects `/dashboard`, `/dashboard/settings`, and any other path starting with `/dashboard`.
+</Note>
+
+## Common Setup
+
+| Path | Protected | Use Case |
+|------|-----------|----------|
+| `/` | No | Public homepage |
+| `/sign-in` | No | Login page |
+| `/sign-up` | No | Registration page |
+| `/dashboard` | Yes | User dashboard |
+| `/account` | Yes | Profile/settings |

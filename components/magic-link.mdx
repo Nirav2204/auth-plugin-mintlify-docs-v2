@@ -1,0 +1,40 @@
+---
+title: "Magic Link"
+description: "Passwordless sign-in via email link. No password required."
+icon: "wand-magic-sparkles"
+---
+
+Passwordless authentication. Users enter their email, receive a link, click it, and they're signed in.
+
+## Properties
+
+| Property | Type | Description | Default |
+|----------|------|-------------|---------|
+| **Accent Color** | Color | Button color | `#9EE86F` |
+| **Button Text** | String | Submit button text | `Send Magic Link` |
+| **Success Message** | String | Message after email is sent | `Check your email for a sign-in link` |
+
+## Features
+
+- Single email input — no password needed
+- Sends a one-time authentication link via email
+- Link auto-authenticates the user on click
+- Shows success message with "check your email" prompt
+- Links expire after a set time for security
+
+## How It Works
+
+```
+User enters email → Backend sends magic link email
+    → User clicks link in email
+    → Auth Plugin validates token
+    → User is authenticated and redirected
+```
+
+## Usage
+
+Place this component on a sign-in page as an alternative to email/password. Many modern apps offer magic link as the primary or only authentication method.
+
+<Tip>
+Magic links are ideal for apps where reducing sign-in friction is more important than traditional password security.
+</Tip>

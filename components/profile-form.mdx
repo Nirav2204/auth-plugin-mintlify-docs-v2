@@ -1,0 +1,27 @@
+---
+title: "Profile Form"
+description: "Edit user profile — name, email, and custom fields. Auto-populates with current user data."
+icon: "user"
+---
+
+A pre-built form for users to view and edit their profile information.
+
+## Properties
+
+| Property | Type | Description | Default |
+|----------|------|-------------|---------|
+| **Accent Color** | Color | Button and focus color | `#9EE86F` |
+| **Show Avatar** | Boolean | Display avatar above the form | `true` |
+| **Custom Fields** | Array | Additional custom input fields | `[]` |
+
+## Features
+
+- Auto-populates with the current user's data (name, email)
+- Inline avatar display with upload option
+- Save changes button with loading state
+- Validation on all fields
+- Success feedback after save
+
+## Usage
+
+Place this on an account or profile page (e.g., `/account`). The form automatically loads the authenticated user's current data.

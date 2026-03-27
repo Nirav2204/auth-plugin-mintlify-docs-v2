@@ -1,0 +1,37 @@
+---
+title: "Sign Up Form"
+description: "Registration form with name, email, password, and confirm password fields."
+icon: "user-plus"
+---
+
+A full registration form with validation, password confirmation, and auto-login after signup.
+
+## Properties
+
+| Property | Type | Description | Default |
+|----------|------|-------------|---------|
+| **Accent Color** | Color | Primary button and focus ring color | `#9EE86F` |
+| **Border Radius** | Number | Corner radius for inputs and button | `8` |
+| **Button Text** | String | Text displayed on the submit button | `Sign Up` |
+| **Redirect URL** | String | Where to redirect after registration | `/welcome` |
+| **Show Name Field** | Boolean | Show/hide the full name input | `true` |
+
+## Features
+
+- Full name, email, password, and confirm password fields
+- Real-time password match validation
+- Email format validation
+- Auto-login after successful registration
+- Welcome email sent automatically
+- Configurable redirect after signup
+
+## Usage
+
+1. Insert the component from Auth Plugin > Components
+2. Place it on your registration page (e.g., `/sign-up`)
+3. Set the redirect URL to your welcome or onboarding page
+4. Toggle the name field on/off based on your needs
+
+<Note>
+After registration, the user is automatically signed in and redirected. A welcome email is sent using your branding settings.
+</Note>

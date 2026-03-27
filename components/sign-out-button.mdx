@@ -1,0 +1,26 @@
+---
+title: "Sign Out Button"
+description: "Customizable logout button that signs out the user and redirects."
+icon: "right-from-bracket"
+---
+
+A button that signs out the current user, clears auth state, and redirects to a specified URL.
+
+## Properties
+
+| Property | Type | Description | Default |
+|----------|------|-------------|---------|
+| **Button Text** | String | Button label | `Sign Out` |
+| **Redirect URL** | String | Where to redirect after logout | `/` |
+| **Style Variant** | Enum | Visual style (`default`, `outline`, `ghost`) | `default` |
+
+## Features
+
+- Clears all authentication tokens and session data
+- Redirects to home or custom URL after sign-out
+- Multiple style variants
+- Customizable button text
+
+## Usage
+
+Place on authenticated pages — typically in the header, sidebar, or account menu.

@@ -1,0 +1,6 @@
+.dark .TopbarCta_topbarCtaBtn__gcL_G,
+.dark [class*="topbarCta"],
+.dark [class*="TopbarCta"] a {
+  background-color: #9EE86F !important;
+  color: #06060a !important;
+}

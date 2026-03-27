@@ -1,0 +1,36 @@
+---
+title: "OAuth Setup"
+description: "Set up Google sign-in for your Framer site."
+icon: "key"
+---
+
+Configure Google OAuth from the plugin: **Settings > OAuth** tab.
+
+## Google OAuth
+
+<Steps>
+  <Step title="Create Google OAuth App">
+    1. Go to [Google Cloud Console](https://console.cloud.google.com)
+    2. Create or select a project
+    3. Go to **APIs & Services > Credentials**
+    4. Create **OAuth 2.0 Client ID** (Web application)
+    5. Add authorized redirect URI:
+    ```
+    https://api.authplugin.io/v1/oauth/callback
+    ```
+    6. Copy **Client ID** and **Client Secret**
+  </Step>
+  <Step title="Configure in Plugin">
+    1. Open Auth Plugin > **Settings** > **OAuth**
+    2. Enable **Google** toggle
+    3. Paste Client ID and Client Secret
+    4. Click **Save Settings**
+  </Step>
+  <Step title="Publish & Test">
+    Publish your site and test Google sign-in on your sign-in page.
+  </Step>
+</Steps>
+
+<Warning>
+The callback URL must match exactly: `https://api.authplugin.io/v1/oauth/callback`
+</Warning>

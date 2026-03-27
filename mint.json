@@ -1,0 +1,105 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Auth Plugin",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#2d7a0f",
+    "light": "#9EE86F",
+    "dark": "#2d7a0f",
+    "background": {
+      "light": "#f4f1ec",
+      "dark": "#06060a"
+    },
+    "anchors": {
+      "from": "#9EE86F",
+      "to": "#2d7a0f"
+    }
+  },
+  "font": {
+    "headings": {
+      "family": "Onest",
+      "weight": 700
+    },
+    "body": {
+      "family": "Onest",
+      "weight": 400
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@framergeeks.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Auth Plugin",
+    "url": "https://framer.com/marketplace/plugins/auth-plugin"
+  },
+  "anchors": [
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://discord.gg/framergeeks"
+    },
+    {
+      "name": "Changelog",
+      "icon": "list",
+      "url": "https://authplugin.io/changelog"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction",
+        "getting-started/installation",
+        "getting-started/setup-wizard"
+      ]
+    },
+    {
+      "group": "Page Guide",
+      "pages": [
+        "guide/sign-in",
+        "guide/sign-up",
+        "guide/forgot-password",
+        "guide/reset-password",
+        "guide/dashboard",
+        "guide/account",
+        "guide/otp-magic-link"
+      ]
+    },
+    {
+      "group": "Components",
+      "pages": [
+        "components/overview",
+        "components/sign-in-form",
+        "components/sign-up-form",
+        "components/forgot-password",
+        "components/reset-password",
+        "components/otp-verification",
+        "components/magic-link",
+        "components/profile-form",
+        "components/avatar",
+        "components/identity-label",
+        "components/sign-out-button",
+        "components/code-overrides"
+      ]
+    },
+    {
+      "group": "Plugin Settings",
+      "pages": [
+        "settings/protected-pages",
+        "settings/oauth",
+        "settings/branding"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/framergeeks"
+  },
+  "css": "/global.css"
+}

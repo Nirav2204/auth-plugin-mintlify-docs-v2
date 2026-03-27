@@ -1,0 +1,50 @@
+---
+title: "Code Overrides"
+description: "Code overrides for visibility control, data injection, and auth actions on any Framer element."
+icon: "code"
+---
+
+Auth Plugin generates an `AuthPluginOverrides.ts` file with code overrides that you can apply to **any Framer element** — not just Auth Plugin components.
+
+## How to Use
+
+1. Insert Code Overrides from the **Components** page
+2. The override file appears in your Framer project's code
+3. Select any element on your canvas
+4. In the right panel, click **Code Overrides**
+5. Select `AuthPluginOverrides` and choose the override
+
+## Available Overrides
+
+### Visibility Overrides
+
+| Override | Description |
+|----------|-------------|
+| **ShowWhenAuthenticated** | Element is visible only when the user is signed in |
+| **ShowWhenGuest** | Element is visible only when the user is NOT signed in |
+
+### Data Injection Overrides
+
+| Override | Description |
+|----------|-------------|
+| **IdentityName** | Replaces element's text content with the user's full name |
+| **IdentityEmail** | Replaces element's text content with the user's email address |
+
+### Action Overrides
+
+| Override | Description |
+|----------|-------------|
+| **TriggerSignOut** | Signs out the user when the element is clicked |
+
+## Examples
+
+### Show a "Sign In" button only to guests
+Apply `ShowWhenGuest` override to the button element.
+
+### Show "Welcome, John" text
+1. Add a text element with placeholder text
+2. Apply `IdentityName` override
+3. The text automatically changes to the user's name when signed in
+
+### Sign out from any element
+Apply `TriggerSignOut` override to any button or link — clicking it will sign out the user.

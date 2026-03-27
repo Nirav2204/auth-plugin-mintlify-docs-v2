@@ -1,0 +1,35 @@
+---
+title: "OTP Verification"
+description: "Two-step code verification via email with 4-6 digit code input."
+icon: "fingerprint"
+---
+
+A two-step verification component. Users enter their email, receive a code, and enter it to authenticate.
+
+## Properties
+
+| Property | Type | Description | Default |
+|----------|------|-------------|---------|
+| **Code Length** | Number | Number of digits in the OTP code | `6` |
+| **Accent Color** | Color | Button and input focus color | `#9EE86F` |
+| **Expiry Time** | Number | Code expiry time in seconds | `300` (5 min) |
+
+## Features
+
+- Step 1: Email input to receive OTP
+- Step 2: Code input boxes (4-6 digits)
+- Auto-focus next input on digit entry
+- Auto-submit when all digits are entered
+- Code expiry timer
+- Resend code option
+
+## Usage
+
+1. Insert the component on your OTP page
+2. Configure the code length (4 or 6 digits)
+3. Set the expiry time based on your security needs
+4. The backend sends the code via email using your branding settings
+
+<Tip>
+OTP verification is great as a second factor after email/password sign-in, or as a standalone passwordless authentication method.
+</Tip>

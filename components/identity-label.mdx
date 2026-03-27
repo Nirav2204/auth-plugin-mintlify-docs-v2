@@ -1,0 +1,34 @@
+---
+title: "Identity Label"
+description: "Displays the authenticated user's name or email as text content."
+icon: "tag"
+---
+
+A text element that dynamically displays the current user's name or email.
+
+## Properties
+
+| Property | Type | Description | Default |
+|----------|------|-------------|---------|
+| **Display Field** | Enum | Which field to show (`name` or `email`) | `name` |
+| **Fallback Text** | String | Text shown when not authenticated | `Guest` |
+| **Font Size** | Number | Text size in pixels | `14` |
+
+## Features
+
+- Dynamically shows current user's name or email
+- Configurable fallback for unauthenticated state
+- Inherits Framer text styling
+- Updates automatically when user data changes
+
+## Usage
+
+Use in headers, navigation bars, or welcome messages to greet users by name.
+
+```
+"Welcome back, {Identity Label}" → "Welcome back, John Doe"
+```
+
+<Tip>
+For more control, use the `IdentityName` or `IdentityEmail` code overrides on any Framer text element instead.
+</Tip>

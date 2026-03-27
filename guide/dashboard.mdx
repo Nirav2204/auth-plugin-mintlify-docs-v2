@@ -1,0 +1,34 @@
+---
+title: "Dashboard (Protected)"
+description: "Set up your protected dashboard page for signed-in users."
+icon: "gauge"
+---
+
+**Path:** `/dashboard` — Protected page (requires login)
+
+## Setup
+
+1. Create a page at `/dashboard` in Framer
+2. Add this page to **Protected Pages** in the plugin panel
+3. Insert these components from Auth Plugin > Components:
+   - **Identity Label** — Shows the user's name
+   - **Sign Out Button** — Lets the user log out
+
+4. Drag them onto your `/dashboard` page
+
+## How Protection Works
+
+When a visitor tries to access `/dashboard` without being signed in, the Shield Script automatically redirects them to your sign-in page. After they sign in, they're sent back to the dashboard.
+
+<Tip>
+Add the **Avatar** component to show the user's profile picture in the dashboard header.
+</Tip>
+
+## Code Overrides
+
+You can also use code overrides on any element:
+
+- **ShowWhenAuthenticated** — Only visible when signed in
+- **ShowWhenGuest** — Only visible when not signed in
+- **IdentityName** — Replaces text with the user's name
+- **IdentityEmail** — Replaces text with the user's email
