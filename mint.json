@@ -32,7 +32,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:support@framergeeks.com"
+      "url": "mailto:team@authplugin.com"
     }
   ],
   "topbarCtaButton": {
@@ -40,11 +40,6 @@
     "url": "https://framer.com/marketplace/plugins/auth-plugin"
   },
   "anchors": [
-    {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://discord.gg/framergeeks"
-    },
     {
       "name": "Changelog",
       "icon": "list",
