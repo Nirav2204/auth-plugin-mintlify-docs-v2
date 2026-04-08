@@ -21,17 +21,14 @@ mode: custom
       <div style={{ padding: '16px 20px', borderBottom: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', gap: '10px' }}>
         <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#94a3b8', flexShrink: 0 }} />
         <span style={{ fontWeight: 700, fontSize: '15px' }}>Planned</span>
-        <span style={{ fontSize: '13px', color: '#94a3b8', marginLeft: 'auto' }}>5</span>
+        <span style={{ fontSize: '13px', color: '#94a3b8', marginLeft: 'auto' }}>4</span>
       </div>
       <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-        <Card title="Role-Based Access Control" icon="users">
-          Assign roles to users and restrict access to specific pages or content based on their role. Perfect for building membership sites with multiple tiers.
+        <Card title="Plan-Based Access Control" icon="crown">
+          Restrict access to specific pages or content based on the user's subscription plan. Perfect for building membership sites with multiple pricing tiers.
         </Card>
         <Card title="Webhooks" icon="webhook">
           Trigger external workflows when users sign up, sign in, or update their profile. Connect Auth Plugin to your favorite automation tools.
-        </Card>
-        <Card title="Custom User Metadata" icon="database">
-          Store and manage custom data fields for each user — such as preferences, plan info, or onboarding status — directly within Auth Plugin.
         </Card>
         <Card title="User Management Dashboard" icon="table-columns">
           View, search, and manage all registered users from a centralized admin dashboard. Edit profiles, reset passwords, and monitor activity.
@@ -47,11 +44,14 @@ mode: custom
       <div style={{ padding: '16px 20px', borderBottom: '1px solid #bfdbfe', display: 'flex', alignItems: 'center', gap: '10px' }}>
         <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#3b82f6', flexShrink: 0 }} />
         <span style={{ fontWeight: 700, fontSize: '15px' }}>In Progress</span>
-        <span style={{ fontSize: '13px', color: '#94a3b8', marginLeft: 'auto' }}>1</span>
+        <span style={{ fontSize: '13px', color: '#94a3b8', marginLeft: 'auto' }}>2</span>
       </div>
       <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-        <Card title="Payment Integration" icon="credit-card">
-          Integrate Stripe for subscription billing and one-time payments. Gate content behind paid plans, manage subscriptions, and handle checkout — all without writing backend code.
+        <Card title="Product Management with Payment Integration" icon="credit-card">
+          Create and manage products with Stripe payment integration. Set up subscription billing, one-time payments, and manage pricing plans — all without writing backend code.
+        </Card>
+        <Card title="Product Activation with License Key & Membership" icon="key">
+          Activate products using license keys and manage membership access. Users can redeem a license key to unlock content, features, or membership tiers automatically.
         </Card>
       </div>
     </div>
@@ -61,7 +61,7 @@ mode: custom
       <div style={{ padding: '16px 20px', borderBottom: '1px solid #bbf7d0', display: 'flex', alignItems: 'center', gap: '10px' }}>
         <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#22c55e', flexShrink: 0 }} />
         <span style={{ fontWeight: 700, fontSize: '15px' }}>Done</span>
-        <span style={{ fontSize: '13px', color: '#94a3b8', marginLeft: 'auto' }}>7</span>
+        <span style={{ fontSize: '13px', color: '#94a3b8', marginLeft: 'auto' }}>8</span>
       </div>
       <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
         <Card title="Email & Password Authentication" icon="envelope">
@@ -84,6 +84,9 @@ mode: custom
         </Card>
         <Card title="Pre-Built UI Components" icon="puzzle-piece">
           12 ready-to-use components including Sign In, Sign Up, Profile, Avatar, OTP, Magic Link, and more — fully customizable in Framer.
+        </Card>
+        <Card title="Customize All Components with Custom Fields" icon="sliders">
+          Add custom field options to any component. Tailor every form and UI element to match your exact requirements using flexible custom fields.
         </Card>
       </div>
     </div>

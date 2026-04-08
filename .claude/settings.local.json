@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Gmail__gmail_create_draft",
+      "Bash(npx mintlify:*)",
+      "Bash(mintlify dev:*)"
+    ]
+  }
+}
