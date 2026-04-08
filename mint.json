@@ -46,6 +46,16 @@
       "url": "https://www.authplugin.com/changelog"
     }
   ],
+  "tabs": [
+    {
+      "name": "Documentation",
+      "url": "/"
+    },
+    {
+      "name": "Roadmap",
+      "url": "roadmap"
+    }
+  ],
   "navigation": [
     {
       "group": "Getting Started",
@@ -90,6 +100,12 @@
         "settings/protected-pages",
         "settings/oauth",
         "settings/branding"
+      ]
+    },
+    {
+      "group": "Roadmap",
+      "pages": [
+        "roadmap/index"
       ]
     }
   ],

@@ -1,0 +1,99 @@
+---
+title: Roadmap
+description: See what's coming next for Auth Plugin — track features from idea to launch.
+mode: custom
+---
+
+<div style={{ maxWidth: '1200px', margin: '0 auto', padding: '48px 24px' }}>
+
+  <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+    <h1 style={{ fontSize: '36px', fontWeight: 800, marginBottom: '12px' }}>Product Roadmap</h1>
+    <p style={{ fontSize: '17px', color: '#64748b', maxWidth: '560px', margin: '0 auto' }}>
+      Track the progress of upcoming features for Auth Plugin. Have an idea?{' '}
+      <a href="mailto:team@authplugin.com" style={{ color: '#2d7a0f', fontWeight: 600 }}>Request a Feature</a>.
+    </p>
+  </div>
+
+  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px', alignItems: 'start' }}>
+
+    {/* Planned */}
+    <div style={{ borderRadius: '12px', border: '1px solid #e2e8f0', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ padding: '16px 20px', borderBottom: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#94a3b8', flexShrink: 0 }} />
+        <span style={{ fontWeight: 700, fontSize: '15px' }}>Planned</span>
+        <span style={{ fontSize: '13px', color: '#94a3b8', marginLeft: 'auto' }}>5</span>
+      </div>
+      <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <Card title="Role-Based Access Control" icon="users">
+          Assign roles to users and restrict access to specific pages or content based on their role. Perfect for building membership sites with multiple tiers.
+        </Card>
+        <Card title="Webhooks" icon="webhook">
+          Trigger external workflows when users sign up, sign in, or update their profile. Connect Auth Plugin to your favorite automation tools.
+        </Card>
+        <Card title="Custom User Metadata" icon="database">
+          Store and manage custom data fields for each user — such as preferences, plan info, or onboarding status — directly within Auth Plugin.
+        </Card>
+        <Card title="User Management Dashboard" icon="table-columns">
+          View, search, and manage all registered users from a centralized admin dashboard. Edit profiles, reset passwords, and monitor activity.
+        </Card>
+        <Card title="API Access" icon="code">
+          Access user data and authentication features programmatically via a REST API. Ideal for building custom integrations and advanced workflows.
+        </Card>
+      </div>
+    </div>
+
+    {/* In Progress */}
+    <div style={{ borderRadius: '12px', border: '1px solid #bfdbfe', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ padding: '16px 20px', borderBottom: '1px solid #bfdbfe', display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#3b82f6', flexShrink: 0 }} />
+        <span style={{ fontWeight: 700, fontSize: '15px' }}>In Progress</span>
+        <span style={{ fontSize: '13px', color: '#94a3b8', marginLeft: 'auto' }}>1</span>
+      </div>
+      <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <Card title="Payment Integration" icon="credit-card">
+          Integrate Stripe for subscription billing and one-time payments. Gate content behind paid plans, manage subscriptions, and handle checkout — all without writing backend code.
+        </Card>
+      </div>
+    </div>
+
+    {/* Done */}
+    <div style={{ borderRadius: '12px', border: '1px solid #bbf7d0', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ padding: '16px 20px', borderBottom: '1px solid #bbf7d0', display: 'flex', alignItems: 'center', gap: '10px' }}>
+        <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#22c55e', flexShrink: 0 }} />
+        <span style={{ fontWeight: 700, fontSize: '15px' }}>Done</span>
+        <span style={{ fontSize: '13px', color: '#94a3b8', marginLeft: 'auto' }}>7</span>
+      </div>
+      <div style={{ padding: '16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <Card title="Email & Password Authentication" icon="envelope">
+          Secure sign-up and sign-in with email and password. Includes forgot password and reset password flows out of the box.
+        </Card>
+        <Card title="OTP Verification" icon="lock">
+          One-time password verification via email for an extra layer of security during sign-in or sign-up.
+        </Card>
+        <Card title="Magic Link Authentication" icon="wand-magic-sparkles">
+          Passwordless sign-in experience. Users receive a magic link via email — one click and they're in.
+        </Card>
+        <Card title="Google OAuth" icon="google">
+          Allow users to sign in with their Google account for a seamless, one-click authentication experience.
+        </Card>
+        <Card title="Protected Pages" icon="shield-halved">
+          Restrict access to specific pages so only authenticated users can view them. Unauthenticated visitors are automatically redirected.
+        </Card>
+        <Card title="Custom Branding" icon="palette">
+          Customize the look and feel of authentication emails with your brand colors, logo, and messaging.
+        </Card>
+        <Card title="Pre-Built UI Components" icon="puzzle-piece">
+          12 ready-to-use components including Sign In, Sign Up, Profile, Avatar, OTP, Magic Link, and more — fully customizable in Framer.
+        </Card>
+      </div>
+    </div>
+
+  </div>
+
+  <div style={{ textAlign: 'center', marginTop: '48px' }}>
+    <Card title="Feature Request" icon="lightbulb" href="mailto:team@authplugin.com">
+      Have an idea? Share your feature request and help shape the future of Auth Plugin.
+    </Card>
+  </div>
+
+</div>
