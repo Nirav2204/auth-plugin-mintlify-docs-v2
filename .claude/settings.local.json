@@ -3,7 +3,17 @@
     "allow": [
       "mcp__claude_ai_Gmail__gmail_create_draft",
       "Bash(npx mintlify:*)",
-      "Bash(mintlify dev:*)"
+      "Bash(mintlify dev:*)",
+      "Bash(unzip -l \"I'm in the docs.authplugin.com Mintlify repo. An Ahrefs audit flagged….pages\")",
+      "Bash(unzip -o \"I'm in the docs.authplugin.com Mintlify repo. An Ahrefs audit flagged….pages\" preview.jpg -d /tmp/pages-preview/)",
+      "Bash(cygpath *)",
+      "Bash(python -c \"import snappy\")",
+      "Bash(py -c \"import sys; print\\(sys.version\\)\")",
+      "Bash(py -m pip list)",
+      "Bash(py -m pip install python-snappy)",
+      "Bash(unzip -o \"I'm in the docs.authplugin.com Mintlify repo. An Ahrefs audit flagged….pages\" -d /tmp/pages-extract/)",
+      "Bash(py C:/Users/saecu/AppData/Local/Temp/iwa_extract.py)",
+      "Bash(py *)"
     ]
   }
 }

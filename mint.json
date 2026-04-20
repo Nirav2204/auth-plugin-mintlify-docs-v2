@@ -37,13 +37,13 @@
   ],
   "topbarCtaButton": {
     "name": "Get Auth Plugin",
-    "url": "https://framer.com/marketplace/plugins/auth-plugin"
+    "url": "https://www.framer.com/marketplace/plugins/auth-plugin/"
   },
   "anchors": [
     {
       "name": "Changelog",
       "icon": "list",
-      "url": "https://www.authplugin.com/changelog"
+      "url": "https://authplugin.com/changelog"
     }
   ],
   "tabs": [
